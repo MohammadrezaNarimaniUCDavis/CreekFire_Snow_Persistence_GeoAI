@@ -9,11 +9,11 @@ Public replication package for a **multisource GeoAI** analysis of post-fire **s
 **Contact:** mnarimani@ucdavis.edu
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Dataset DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23024081.svg)](https://doi.org/10.5281/zenodo.23024081)
+[![Dataset DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23024081.svg)](https://zenodo.org/records/23024081)
 
 | Resource | Link |
 | -------- | ---- |
-| **Dataset (Zenodo)** | https://doi.org/10.5281/zenodo.23024081 |
+| **Dataset (Zenodo)** | https://zenodo.org/records/23024081 |
 | **This code** | https://github.com/MohammadrezaNarimaniUCDavis/CreekFire_Snow_Persistence_GeoAI |
 
 This repository is the **public replication package**. It contains audited `.py` scripts and analysis-ready products needed to reproduce the paper's core BACI and GeoAI results. The authors' full working archive remains private.
@@ -141,7 +141,7 @@ Modeled after the public replication style of [Palisades Urban Wildfire GeoAI](h
   version   = {1.0.0},
   publisher = {Zenodo},
   doi       = {10.5281/zenodo.23024081},
-  url       = {https://doi.org/10.5281/zenodo.23024081}
+  url       = {https://zenodo.org/records/23024081}
 }
 ```
 
@@ -153,7 +153,7 @@ Modeled after the public replication style of [Palisades Urban Wildfire GeoAI](h
   title  = {Creek Fire Snow Persistence GeoAI: replication code},
   year   = {2026},
   url    = {https://github.com/MohammadrezaNarimaniUCDavis/CreekFire_Snow_Persistence_GeoAI},
-  note   = {Dataset DOI: https://doi.org/10.5281/zenodo.23024081}
+  note   = {Dataset DOI: https://zenodo.org/records/23024081}
 }
 ```
 

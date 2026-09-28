@@ -45,4 +45,7 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.23024081
     description: Companion geospatial dataset on Zenodo
+  - type: url
+    value: "https://zenodo.org/records/23024081"
+    description: Zenodo record page for the companion dataset
 url: "https://github.com/MohammadrezaNarimaniUCDavis/CreekFire_Snow_Persistence_GeoAI"
