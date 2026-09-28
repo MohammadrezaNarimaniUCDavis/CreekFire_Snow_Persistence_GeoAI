@@ -34,4 +34,3 @@ Earth Engine acquisition scripts used in the private working archive are **not**
 - Predictors for ML use **pre-fire** terrain, severity (static post-event map), years-since-fire, and winter climate - not post-fire recovery indices as outcomes mixed into features.
 - Spatial-block CV is the primary generalization metric; random-split optimism is reported only as contrast.
 - BACI uses **matched** burned-control pairs (n = 3,778).
-

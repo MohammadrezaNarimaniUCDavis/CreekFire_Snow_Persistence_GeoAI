@@ -48,53 +48,29 @@ Claims are framed as **association / screening / spatially honest skill**, not c
 
 ## Repository layout
 
-`
+```text
 CreekFire_Snow_Persistence_GeoAI/
 |-- config/                  # project + figure style
 |-- data/
 |   |-- boundary/            # Creek Fire perimeter + AOI (shipped)
 |   |-- derived/             # analysis-ready panels (shipped)
-|   -- metadata/
+|   `-- metadata/
 |-- src/                     # audited replication code (.py)
 |   |-- analysis/            # BACI recompute + metric summaries
 |   |-- manuscript/          # table builders
 |   |-- statistics/          # matching / BACI helpers
-|   -- utils/
+|   `-- utils/
 |-- results/
 |   |-- tables/              # manuscript tables
 |   |-- statistical/         # BACI, event study, balance
 |   |-- metrics/             # spatial CV, SHAP, OOF
-|   -- figures/             # Figures 01-09 (PNG + PDF)
+|   `-- figures/             # Figures 01-09 (PNG + PDF)
 |-- docs/
 |-- tests/
 |-- run_pipeline.py
 |-- requirements.txt
 |-- CITATION.cff
--- LICENSE
-`
-
-CreekFire_Snow_Persistence_GeoAI/
-|-- config/                  # project + figure style
-|-- data/
-|   |-- boundary/            # Creek Fire perimeter + AOI (shipped)
-|   |-- derived/             # analysis-ready panels (shipped)
-|   -- metadata/
-|-- src/                     # audited replication code (.py)
-|   |-- analysis/            # BACI recompute + metric summaries
-|   |-- manuscript/          # table builders
-|   |-- statistics/          # matching / BACI helpers
-|   -- utils/
-|-- results/
-|   |-- tables/              # manuscript tables
-|   |-- statistical/         # BACI, event study, balance
-|   |-- metrics/             # spatial CV, SHAP, OOF
-|   -- figures/             # Figures 01-09 (PNG + PDF)
-|-- docs/
-|-- tests/
-|-- run_pipeline.py
-|-- requirements.txt
-|-- CITATION.cff
--- LICENSE
+`-- LICENSE
 ```
 
 Clipped HLS / MODIS / SDD / DEM / severity rasters are **not** stored on GitHub; they are distributed via Zenodo (see [Data availability](#data-availability)).
@@ -194,4 +170,3 @@ Code: MIT. Third-party geospatial inputs retain original licenses ([`docs/DATA.m
 ## Contact
 
 Mohammadreza Narimani - `mnarimani@ucdavis.edu` (University of California, Davis)
-
