@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use this software or derived data, please cite this repository and the Zenodo dataset as below."
+type: software
+title: "Creek Fire Snow Persistence GeoAI: replication code"
+authors:
+  - family-names: Farajpoor
+    given-names: Parastoo
+    affiliation: "Department of Biological and Agricultural Engineering, University of California, Davis"
+  - family-names: Narimani
+    given-names: Mohammadreza
+    email: mnarimani@ucdavis.edu
+    affiliation: "Department of Biological and Agricultural Engineering, University of California, Davis"
+version: "1.0.0"
+date-released: "2026-09-28"
+license: MIT
+repository-code: "https://github.com/MohammadrezaNarimaniUCDavis/CreekFire_Snow_Persistence_GeoAI"
+abstract: >-
+  Public replication package for a multisource GeoAI study of post-fire snow
+  persistence after the 2020 Creek Fire (Sierra Nevada, California), linking
+  HLS NDSI persistence, Sentinel-2 burn severity, terrain, and ERA5-Land winter
+  climate under matched BACI designs and spatially blocked machine learning.
+keywords:
+  - wildfire
+  - snow persistence
+  - Creek Fire
+  - Sierra Nevada
+  - GeoAI
+  - BACI
+  - HLS
+  - burn severity
+  - spatial cross-validation
+
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Farajpoor
+      given-names: Parastoo
+    - family-names: Narimani
+      given-names: Mohammadreza
+  title: "From Wildfire Severity to Snow Persistence: A Multisource GeoAI Study of the 2020 Creek Fire"
+  year: 2026
+  url: "https://github.com/MohammadrezaNarimaniUCDavis/CreekFire_Snow_Persistence_GeoAI"
+
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23024081
+    description: Companion geospatial dataset on Zenodo
+url: "https://github.com/MohammadrezaNarimaniUCDavis/CreekFire_Snow_Persistence_GeoAI"

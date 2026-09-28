@@ -1,0 +1,4 @@
+n,r2,rmse,mae,model,cv,ablation,target
+22665,-0.0029028679051694,0.0826599855031476,0.061763798180785,elastic_net,spatial_GroupKFold_5km,C_topo_met_sev,adj_diff_anomaly
+22665,0.032413913598167,0.0811915244010608,0.0606267267064996,random_forest,spatial_GroupKFold_5km,C_topo_met_sev,adj_diff_anomaly
+22665,0.046197149643667,0.0806111647179693,0.0602517481971642,xgboost,spatial_GroupKFold_5km,C_topo_met_sev,adj_diff_anomaly

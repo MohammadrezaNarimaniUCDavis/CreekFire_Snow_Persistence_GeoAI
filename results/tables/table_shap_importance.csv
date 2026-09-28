@@ -1,0 +1,11 @@
+feature,mean_abs_shap
+elevation,0.08248453
+winter_tmean,0.069920905
+slope,0.029637007
+northness,0.019932369
+dnbr,0.013529742
+years_since_fire,0.008529282
+winter_prcp,0.006776589
+pdd,0.0009159641
+winter_srad,0.0002296306
+fdd,0.0

@@ -1,0 +1,13 @@
+{
+  "tested_local": {
+    "500m": "primary modeling grid \u2014 tractable on workstation"
+  },
+  "exports_in_progress": {
+    "90m": "GEE Drive/Asset exports for persist+SDD"
+  },
+  "native": {
+    "30m": "HLS native; maps retained via GEE assets when complete"
+  },
+  "decision": "Use 500 m for statistics/GeoAI; document 90 m as upgrade path; do not claim 30 m modeling completed.",
+  "memory_note": "Full 30 m panel for Creek+controls exceeds modest RAM for multi-year matching without chunking."
+}

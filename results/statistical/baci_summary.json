@@ -1,0 +1,18 @@
+{
+  "pre_diff": 0.001719959212085552,
+  "post_diff": 0.0034300230396428683,
+  "baci_effect": 0.0017100638275573162,
+  "ci95_low": 0.00027574382174282765,
+  "ci95_high": 0.003175254365800603,
+  "n_matched_cells": 3778,
+  "resolution_m": 500.0,
+  "snow_source": "GEE HLS HLSL30+HLSS30",
+  "covariates": [
+    "elevation",
+    "slope",
+    "northness",
+    "eastness",
+    "radiation_index",
+    "pre_persist"
+  ]
+}

@@ -1,0 +1,100 @@
+project:
+  name: creek_fire_snow_geoai
+  short_title: Interpretable GeoAI for post-Creek-Fire snow persistence
+  working_title: >-
+    Interpretable GeoAI for Quantifying Burn-Severity and Canopy Controls on
+    Post-Wildfire Snow Persistence Following the 2020 Creek Fire, Sierra Nevada
+  target_journal: Frontiers in Forests and Global Change
+  article_type: Original Research
+  research_topic: >-
+    Artificial Intelligence for Forest Monitoring, Resilience, and Sustainable
+    Management under Global Change
+  manuscript_deadline: "2027-03-08"
+  word_limit_original_research: 12000
+  random_seed: 42
+  gee_project: ee-mnarimani
+  gee_asset_root: projects/ee-mnarimani/assets/creek_snow
+  gee_drive_folder: creek_fire_snow_geoai
+
+study:
+  fire_name: Creek Fire
+  fire_start: "2020-09-04"
+  fire_year: 2020
+  states: [California]
+  counties: [Fresno, Madera]
+  approx_burned_acres: 379895
+  neon_site: SOAP
+  crs_epsg: 32611  # WGS 84 / UTM zone 11N
+  geographic_crs_epsg: 4326
+  modeling_resolution_m: 90
+  map_resolution_m: 30
+  control_buffer_km_min: 5
+  control_buffer_km_max: 30
+  spatial_block_km: 5
+
+water_years:
+  pre_fire: [2016, 2017, 2018, 2019, 2020]
+  post_fire: [2021, 2022, 2023, 2024, 2025, 2026]
+
+snow:
+  ndsi_thresholds: [0.30, 0.35, 0.40, 0.45, 0.50]
+  primary_ndsi_threshold: 0.40
+  green_reflectance_min: 0.10
+  swir_reflectance_max: 0.20
+  sdd_persistence_snowfree_obs: 2
+  max_gap_days: 32
+  snow_season_start_month_day: "10-01"
+  snow_season_end_month_day: "07-31"
+
+matching:
+  method: nearest_neighbor_mahalanobis
+  caliper_smd: 0.25
+  target_smd: 0.10
+  covariates:
+    - elevation
+    - slope
+    - northness
+    - eastness
+    - radiation_index
+    - prefire_ndvi
+    - prefire_nbr
+    - prefire_mean_sdd
+    - prefire_snow_persistence
+    - prefire_tmean_winter
+    - prefire_precip_winter
+
+baci:
+  cluster_km: 5
+  severity_classes: [unburned, low, moderate, high]
+
+models:
+  baselines: [elastic_net, random_forest, xgboost]
+  primary_dl: multimodal_tcn
+  cv: spatial_group_kfold
+  n_splits: 5
+  block_sizes_km: [3, 5, 10]
+  tcn:
+    channels: [32, 32, 16]
+    kernel_size: 3
+    dropout: 0.2
+    max_epochs: 80
+    patience: 12
+    batch_size: 256
+    lr: 0.001
+
+figures:
+  dpi: 300
+  font_family: DejaVu Sans
+  vertical_exaggeration_3d: 2.0
+
+paths:
+  root: .
+  data_raw: data/raw
+  data_interim: data/interim
+  data_processed: data/processed
+  figures: figures
+  tables: tables
+  results: results
+  reports: reports
+  manuscript: manuscript
+  literature: literature

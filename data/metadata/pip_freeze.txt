@@ -1,0 +1,13 @@
+﻿# Generated for CreekFire_Snow_Persistence_GeoAI public package
+# Install: pip install -r requirements.txt
+numpy
+pandas
+pyarrow
+scikit-learn
+scipy
+matplotlib
+geopandas
+shapely
+pyyaml
+xgboost
+pytest

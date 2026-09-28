@@ -1,0 +1,72 @@
+# Shared journal style for Sierra Nevada manuscript figures.
+# Loaded by src/visualization/style_gis.py (ported from Palisades).
+
+fonts:
+  # Preferred family: Helvetica. Resolved at runtime to Helvetica → FreeSans
+  # (bundled Helvetica-compatible) → Arial → DejaVu Sans.
+  family: Helvetica
+  size_base: 8
+  size_small: 7
+  size_label: 8
+  size_title: 8
+  size_panel_label: 9
+  size_legend_title: 8
+
+lines:
+  axes_linewidth: 1.0
+  line_width: 1.15
+  grid_alpha: 0.22
+
+figure:
+  width_single_cm: 8.4
+  width_double_cm: 17.4
+  max_height_cm: 22.0
+  dpi_raster: 300
+  dpi_line: 600
+
+# Semantic palette (colorblind-aware). Sierra narrative:
+# blue = control / snow persistence; red = fire / loss; gold = accent / SOAP.
+colors:
+  destroyed: "#B2182B"
+  major: "#EF8A62"
+  minor: "#FDDBC7"
+  affected: "#92C5DE"
+  survived: "#2166AC"
+  no_damage: "#4393C3"
+  fire: "#D55E00"
+  control: "#0072B2"
+  treat: "#E69F00"
+  soap: "#F0E442"
+  perimeter: "#1A1A1A"
+  buffer: "#737373"
+  water: "#C5DCEB"
+  road: "#B0B0B0"
+  accent: "#E69F00"
+  neutral_dark: "#252525"
+  neutral_mid: "#636363"
+  neutral_light: "#D0D0D0"
+
+palettes:
+  vegetation_seq: "YlGn"
+  moisture_seq: "YlGnBu"
+  anomaly_div: "RdBu_r"
+  dnbr_div: "RdYlGn_r"
+  terrain_seq: "Greys"          # Palisades map convention
+  density_seq: "PuBu"
+  year_seq: "cividis"
+  shap_div: "RdBu_r"
+  access_seq: "YlOrBr"
+  lst_seq: "magma"
+  slope_seq: "magma"
+  northness_div: "PuOr_r"
+
+maps:
+  scalebar: true
+  scalebar_km: 20.0
+  scalebar_location: "lower left"
+  north_arrow: true
+  north_arrow_style: arcgis_split   # match locked figure_06: split chevron + N below
+  frame: "full"
+  legend_frame: true
+  basemap_alpha: 0.85
+  crs: "EPSG:32611"

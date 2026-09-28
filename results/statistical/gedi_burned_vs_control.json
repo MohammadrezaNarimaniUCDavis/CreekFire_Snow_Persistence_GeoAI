@@ -1,0 +1,15 @@
+{
+  "burned_pre": {
+    "rh98": 17.021118783039938
+  },
+  "burned_post": {
+    "rh98": 12.474165041247193
+  },
+  "control_pre": {
+    "rh98": 8.885965598867932
+  },
+  "control_post": {
+    "rh98": 9.113090892988993
+  },
+  "neon_status": "API 403 \u2014 NEON CHM deferred; GEDI used as structural alternative"
+}

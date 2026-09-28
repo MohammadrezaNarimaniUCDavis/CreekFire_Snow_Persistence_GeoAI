@@ -1,0 +1,10 @@
+{
+  "n": 22665,
+  "r2": 0.8107135339536463,
+  "rmse": 0.06730089230066238,
+  "mae": 0.0500972253044281,
+  "target": "treated_persist",
+  "ablation": "D_full_static",
+  "model": "xgboost",
+  "features": "elevation,slope,northness,dnbr,years_since_fire,winter_tmean,winter_prcp,winter_srad,fdd,pdd"
+}

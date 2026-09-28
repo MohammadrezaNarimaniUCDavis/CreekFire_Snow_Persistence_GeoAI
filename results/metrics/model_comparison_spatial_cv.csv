@@ -1,0 +1,4 @@
+n,r2,rmse,mae,model,cv,ablation,target
+22665,0.6483744213905149,0.0917278619181284,0.0741325391838657,elastic_net,spatial_GroupKFold_5km,D_full_static,treated_persist
+22665,0.805438429811194,0.0682322310503987,0.0502436347991493,random_forest,spatial_GroupKFold_5km,D_full_static,treated_persist
+22665,0.8107135339536463,0.0673008923006623,0.0500972253044281,xgboost,spatial_GroupKFold_5km,D_full_static,treated_persist

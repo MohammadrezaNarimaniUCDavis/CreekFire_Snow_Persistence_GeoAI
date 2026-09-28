@@ -1,0 +1,17 @@
+﻿{
+  "title": "From Wildfire Severity to Snow Persistence: A Multisource GeoAI Study of the 2020 Creek Fire",
+  "n_matched_cells": 3778,
+  "n_cell_years_ml": 22665,
+  "baci_effect": 0.00171,
+  "baci_ci95": [0.00028, 0.00318],
+  "baci_high_severity": 0.02603,
+  "xgboost_level_r2_spatial_cv": 0.811,
+  "xgboost_anomaly_r2_spatial_cv": 0.046,
+  "shap_elevation_winter_t_share_pct": 65.7,
+  "resolution_m": 500,
+  "crs": "EPSG:32611",
+  "event": "Creek Fire 2020",
+  "authors": ["Parastoo Farajpoor", "Mohammadreza Narimani"],
+  "affiliation": "Department of Biological and Agricultural Engineering, University of California, Davis",
+  "contact": "mnarimani@ucdavis.edu"
+}

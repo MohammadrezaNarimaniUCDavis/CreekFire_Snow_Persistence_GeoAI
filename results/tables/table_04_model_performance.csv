@@ -1,0 +1,5 @@
+n,r2,rmse,mae,model,cv,note
+22665,-0.121053486811222,0.0873934843892187,0.0676333716720414,elastic_net,spatial_GroupKFold_5km,
+22665,-0.2641884917888735,0.0928050917491003,0.0719252549635239,random_forest,spatial_GroupKFold_5km,
+22665,-0.2417871022664111,0.0919791645512178,0.0714275928237134,xgboost,spatial_GroupKFold_5km,
+22665,-0.793777366494681,0.1105478138113288,0.0820982416489973,multimodal_tcn,spatial_GroupKFold_5km,sequence=prefire treated persistence (WY<=2020); static=topo+severity+years

@@ -1,0 +1,15 @@
+{
+  "method": "Welch t on water-year means of burned-minus-matched-control persistence (years as replicate unit)",
+  "n_pre_years": 5,
+  "n_post_years": 6,
+  "pre_mean": 0.0017205620182952797,
+  "pre_sd_years": 0.02001847001206394,
+  "post_mean": 0.00342903581102025,
+  "post_sd_years": 0.013449870921573973,
+  "baci_effect": 0.0017084737927249704,
+  "se_year_level": 0.010502269578172813,
+  "welch_df": 6.805074294014607,
+  "ci95_low": -0.02327038066821701,
+  "ci95_high": 0.026687328253666952,
+  "p_value": 0.8754979689049406
+}

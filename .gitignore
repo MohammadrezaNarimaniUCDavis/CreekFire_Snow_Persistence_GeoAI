@@ -1,0 +1,22 @@
+# Local / packaging only (rasters live on Zenodo)
+data/supporting_rasters/
+*.zip
+.zenodo_upload/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+.env
+.venv/
+venv/
+*.egg-info/
+.idea/
+.vscode/
+~$*
+*.tmp
+_tmp_*
+.token*
+zenodo_token*
+credentials*

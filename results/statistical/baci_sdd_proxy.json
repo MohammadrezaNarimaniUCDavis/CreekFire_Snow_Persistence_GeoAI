@@ -1,0 +1,9 @@
+{
+  "pre_diff_doy": 3.6633594813350814,
+  "post_diff_doy": -6.219774140108697,
+  "baci_effect_doy": -9.883133621443779,
+  "ci95_low": -10.198281918526556,
+  "ci95_high": -9.516652111149034,
+  "n_matched_cells": 3778,
+  "note": "SDD proxy = mean water-year DOY of snow-flagged HLS obs; not gap-aware binary SDD"
+}

@@ -1,0 +1,5 @@
+{
+  "morans_I_knn8": 0.3118881247493141,
+  "n": 3778,
+  "note": "kNN=8 equal weights on post-fire mean burned-control diff"
+}

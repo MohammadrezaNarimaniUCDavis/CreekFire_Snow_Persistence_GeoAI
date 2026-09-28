@@ -1,0 +1,16 @@
+{
+  "ndsi_thresholds_evaluated_in_config": [
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5
+  ],
+  "primary_threshold": 0.4,
+  "proxy_robustness": {
+    "hls_modis_mean_pearson": 0.9467101047703355,
+    "severity_baci_sign_high_positive": true,
+    "overall_baci_ci_excludes_zero": true
+  },
+  "note": "Full per-threshold re-exports deferred; primary NDSI=0.40 used; MODIS cross-sensor agreement supports snow mapping quality."
+}

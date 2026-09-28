@@ -1,0 +1,6 @@
+quantity,estimate,ci95_low,ci95_high,n_cells
+Overall BACI (persistence fraction),0.0017100638275573162,0.00027574382174282765,0.003175254365800603,3778
+BACI by severity (high),0.0260281548382148,,,448
+BACI by severity (low),-0.0017856585527155,,,977
+BACI by severity (moderate),0.0070389607614044,,,565
+BACI by severity (unburned),-0.0041570355382239,,,1788
