@@ -2,29 +2,29 @@
 Fire name / MTBS event ID,CREEK / CA3720111927220200905,,MTBS perimeter attributes
 Ignition date (MTBS),2020-09-05,date,MTBS perimeter attributes
 Burned area (MTBS attribute),381529,acres,MTBS burnbndac
-Perimeter area (computed),1544.0,kmÂ²,"MTBS perimeter, UTM 11N"
-Perimeter centroid latitude,37.3333,Â°N,MTBS burnbndlat
-Perimeter centroid longitude,-119.2758,Â°E,MTBS burnbndlon
-Control ring area (5â€“30 km),7566.6,kmÂ²,Computed buffer difference
-Elevation inside perimeter â€” min,429.0,m,Copernicus DEM GLO-30 @90 m
-Elevation inside perimeter â€” mean,1832.0,m,Copernicus DEM GLO-30 @90 m
-Elevation inside perimeter â€” median,1922.0,m,Copernicus DEM GLO-30 @90 m
-Elevation inside perimeter â€” max,3066.0,m,Copernicus DEM GLO-30 @90 m
+Perimeter area (computed),1544.0,km^2,"MTBS perimeter, UTM 11N"
+Perimeter centroid latitude,37.3333,deg N,MTBS burnbndlat
+Perimeter centroid longitude,-119.2758,deg E,MTBS burnbndlon
+Control ring area (5-30 km),7566.6,km^2,Computed buffer difference
+Elevation inside perimeter - min,429.0,m,Copernicus DEM GLO-30 @90 m
+Elevation inside perimeter - mean,1832.0,m,Copernicus DEM GLO-30 @90 m
+Elevation inside perimeter - median,1922.0,m,Copernicus DEM GLO-30 @90 m
+Elevation inside perimeter - max,3066.0,m,Copernicus DEM GLO-30 @90 m
 Perimeter fraction above 2000 m,44.6,%,Copernicus DEM GLO-30 @90 m
 Perimeter fraction above 2500 m,6.2,%,Copernicus DEM GLO-30 @90 m
-Elevation in control ring â€” mean,1910.0,m,Copernicus DEM @500 m grid
+Elevation in control ring - mean,1910.0,m,Copernicus DEM @500 m grid
 500-m grid cells inside perimeter (all),6177,cells,Master 500 m grid
 500-m grid cells in control ring (all),30279,cells,Master 500 m grid
-Snow-zone cells (pre-fire persistence > 0.05) â€” treated,3778,cells,analysis_cells.parquet
-Snow-zone cells (pre-fire persistence > 0.05) â€” control,17506,cells,analysis_cells.parquet
+Snow-zone cells (pre-fire persistence > 0.05) - treated,3778,cells,analysis_cells.parquet
+Snow-zone cells (pre-fire persistence > 0.05) - control,17506,cells,analysis_cells.parquet
 "Matched treated cells (1:1 NN, caliper)",3778,cells,baci_summary.json
-Matched cells â€” elevation mean (range),2142 (1351â€“2957),m,baci_panel.parquet
-Matched cells â€” slope mean,8.7,Â°,baci_panel.parquet
-Matched cells â€” northness mean,-0.197,,baci_panel.parquet
-Pre-fire persistence WY2016â€“20 â€” treated mean,0.246,fraction,analysis_cells.parquet
-Post-fire persistence WY2021â€“26 â€” treated mean,0.261,fraction,analysis_cells.parquet
-Pre-fire persistence WY2016â€“20 â€” control mean,0.468,fraction,analysis_cells.parquet
-Post-fire persistence WY2021â€“26 â€” control mean,0.436,fraction,analysis_cells.parquet
+Matched cells - elevation mean (range),2142 (1351-2957),m,baci_panel.parquet
+Matched cells - slope mean,8.7,°,baci_panel.parquet
+Matched cells - northness mean,-0.197,,baci_panel.parquet
+Pre-fire persistence WY2016-20 - treated mean,0.246,fraction,analysis_cells.parquet
+Post-fire persistence WY2021-26 - treated mean,0.261,fraction,analysis_cells.parquet
+Pre-fire persistence WY2016-20 - control mean,0.468,fraction,analysis_cells.parquet
+Post-fire persistence WY2021-26 - control mean,0.436,fraction,analysis_cells.parquet
 Domain-wide persistence inside perimeter WY2016,0.167,fraction,GEE HLS 500 m grids
 Domain-wide persistence inside perimeter WY2017,0.223,fraction,GEE HLS 500 m grids
 Domain-wide persistence inside perimeter WY2018,0.085,fraction,GEE HLS 500 m grids
@@ -36,15 +36,15 @@ Domain-wide persistence inside perimeter WY2023,0.349,fraction,GEE HLS 500 m gri
 Domain-wide persistence inside perimeter WY2024,0.173,fraction,GEE HLS 500 m grids
 Domain-wide persistence inside perimeter WY2025,0.131,fraction,GEE HLS 500 m grids
 Domain-wide persistence inside perimeter WY2026,0.115,fraction,GEE HLS 500 m grids
-NEON SOAP tower latitude/longitude,"37.03337, -119.26219",Â°,NEON site metadata
+NEON SOAP tower latitude/longitude,"37.03337, -119.26219",°,NEON site metadata
 SOAP tower inside Creek perimeter,True,,Computed
 SOAP distance to perimeter boundary,0.01,km,Computed
 SOAP elevation (DEM),1210.0,m,Copernicus DEM
 Burn-severity layer,Sentinel-2 L2A dNBR via GEE (MTBS fallback),,data/raw/mtbs/severity/creek_s2_dnbr_gee_30m.tif
 dNBR valid fraction inside perimeter,100.0,%,data/raw/mtbs/severity/creek_s2_dnbr_gee_30m.tif
 Matched cells with valid burn severity,3778 / 3778,cells,baci_panel.parquet
-Matched cells â€” severity class 'unburned',1788,cells,baci_panel.parquet (dNBR thresholds 0.10/0.27/0.44)
-Matched cells â€” severity class 'low',977,cells,baci_panel.parquet (dNBR thresholds 0.10/0.27/0.44)
-Matched cells â€” severity class 'moderate',565,cells,baci_panel.parquet (dNBR thresholds 0.10/0.27/0.44)
-Matched cells â€” severity class 'high',448,cells,baci_panel.parquet (dNBR thresholds 0.10/0.27/0.44)
-Matched cells â€” dNBR mean (IQR),0.151 (-0.008â€“0.287),,baci_panel.parquet
+Matched cells - severity class 'unburned',1788,cells,baci_panel.parquet (dNBR thresholds 0.10/0.27/0.44)
+Matched cells - severity class 'low',977,cells,baci_panel.parquet (dNBR thresholds 0.10/0.27/0.44)
+Matched cells - severity class 'moderate',565,cells,baci_panel.parquet (dNBR thresholds 0.10/0.27/0.44)
+Matched cells - severity class 'high',448,cells,baci_panel.parquet (dNBR thresholds 0.10/0.27/0.44)
+Matched cells - dNBR mean (IQR),0.151 (-0.008-0.287),,baci_panel.parquet

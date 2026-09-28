@@ -22,7 +22,7 @@ python tests/run_checks.py
 2. Confirm HLS WY GeoTIFFs exist under `data/supporting_rasters/hls_persist_500m/`.
 3. Re-run matching / panel construction only if you intentionally change the grid or covariates (advanced; not required for table replication).
 
-Earth Engine acquisition scripts used in the private working archive are **not** required to verify the paperâ€™s locked BACI and ML metrics.
+Earth Engine acquisition scripts used in the private working archive are **not** required to verify the paper's locked BACI and ML metrics.
 
 ## Environment
 
@@ -31,7 +31,7 @@ Earth Engine acquisition scripts used in the private working archive are **not**
 
 ## Design notes that protect against leakage
 
-- Predictors for ML use **pre-fire** terrain, severity (static post-event map), years-since-fire, and winter climate â€” not post-fire recovery indices as outcomes mixed into features.
+- Predictors for ML use **pre-fire** terrain, severity (static post-event map), years-since-fire, and winter climate - not post-fire recovery indices as outcomes mixed into features.
 - Spatial-block CV is the primary generalization metric; random-split optimism is reported only as contrast.
-- BACI uses **matched** burnedâ€“control pairs (n = 3,778).
+- BACI uses **matched** burned-control pairs (n = 3,778).
 
