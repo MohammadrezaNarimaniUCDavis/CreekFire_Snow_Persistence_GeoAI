@@ -37,8 +37,10 @@ Claims are framed as **association / screening / spatially honest skill**, not c
 | ------ | ----- |
 | Matched pairs (500 m cells) | **3,778** |
 | Cell-years (ML panel) | **22,665** |
-| Overall persistence BACI | **+0.0017** (95% CI 0.0003-0.0032) |
-| High-severity BACI | **+0.026** |
+| Overall persistence BACI | **+0.0017** |
+| Cell-level 95% interval | +0.0003 to +0.0032 (cells resampled; years held fixed) |
+| Year-level 95% interval | -0.023 to +0.027 (annual means; includes zero) |
+| High-severity BACI | **+0.026** (year-level interval excludes zero) |
 | XGBoost level R^2 (spatial CV) | **0.811** |
 | XGBoost anomaly R^2 (spatial CV) | **0.046** |
 | SHAP share (elevation + winter T) | **~65.7%** |
