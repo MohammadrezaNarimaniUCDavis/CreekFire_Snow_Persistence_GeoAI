@@ -26,7 +26,8 @@ study:
   neon_site: SOAP
   crs_epsg: 32611  # WGS 84 / UTM zone 11N
   geographic_crs_epsg: 4326
-  modeling_resolution_m: 90
+  # Reported analysis uses the 500 m grid. Native HLS is 30 m.
+  modeling_resolution_m: 500
   map_resolution_m: 30
   control_buffer_km_min: 5
   control_buffer_km_max: 30
@@ -47,8 +48,9 @@ snow:
   snow_season_end_month_day: "07-31"
 
 matching:
-  method: nearest_neighbor_mahalanobis
-  caliper_smd: 0.25
+  # Nearest neighbor in z-scored covariate space, as reported in the manuscript.
+  method: nearest_neighbor_standardized_euclidean
+  caliper: 1.22  # 0.5 * sqrt(6)
   target_smd: 0.10
   covariates:
     - elevation
@@ -56,12 +58,7 @@ matching:
     - northness
     - eastness
     - radiation_index
-    - prefire_ndvi
-    - prefire_nbr
-    - prefire_mean_sdd
-    - prefire_snow_persistence
-    - prefire_tmean_winter
-    - prefire_precip_winter
+    - pre_persist
 
 baci:
   cluster_km: 5
